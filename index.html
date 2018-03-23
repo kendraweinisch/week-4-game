@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Try Crystal Math!</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+</head>
+
+<body>
+        <div class="jumbotron text-center">
+                <h1>Crystal Collector Math Game</h1></div>
+
+                <!-- <div class="container">
+                        <div class="row">
+                          <div class="col-lg-4 mainContent">
+                             <img class="img-fluid float-left thumbnail" id="graphics" src="assets/images/crystalsbg.jpg">
+             -->
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h2>Instructions</h2> 
+                        <p>There are four beautiful crystals below, each worth a different amount. 
+                            Click on each crystal to discover its value. Continue to click on the four crystals until your sum 
+                            equals the random number in the box on the left.
+                            When your total score equals the random number on the left, you win!
+                            You lose the game if your total score goes higher than the number on the left.</p>
+                      </div>
+                    </div>
+  
+    <div class="container-fluid">
+        <div class="row"> 
+        <!-- <div class="col-lg-1">             -->
+        <input type="image" id="bluegem" style="height:200px;width:200px;" src="assets/images/blue.jpg" />
+        <input type="image" id="yellowgem" style="height:200px;width:200px;" src="assets/images/yellow.jpg" />
+        <input type="image" id="tealgem" style="height:200px;width:200px;" src="assets/images/teal.jpg" />
+        <input type="image" id="purplegem" style="height:200px;width:200px;" src="assets/images/purple.jpg" />
+    <!-- </div>  -->
+    </div></div>
+    <div>
+     target: <span id = "targetNumber"></span>
+     user: <span id = "userScore"  > </span>
+     wins: <span id = "wins" >    </span>
+    losses: <span id = "losses" > </span>
+     
+    </div>
+    
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright 2018 Kendra Weinisch &copy; 
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+ 
+ 
+  <!-- page load 
+    target score, user score, wins, losses, 4 crystals
+
+    step 1 - user clicks a gem, user total goes up by value of gem
+    step 2 - compare user score to Random after every click
+    step 3 - if userScore = Random, handle win
+    step 3.1 - if userScore > Random, handle loss
+    step 3.2 else loop
+
+    if win, notify user of win
+    increment wins by 1
+    reset game
+
+    if loss, notify of loss
+    increment loss by 1
+    reset game
+
+    wipe clean user score
+    reassign target score
+    reassign crystal values
+
+    functions list: assign Random, crystal values, update userScore, update wins and losses, handle end of game, check for endgame conditions
+
+  
+  --> 
+  <script src="assets/javascript/game.js"> 
+
+  </script>
+</body>
+
+</html>
